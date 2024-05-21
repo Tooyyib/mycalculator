@@ -30,9 +30,9 @@ const [value, setValue] = useState("")
       <input type="button" className="bg-[#0077b6] p-2 fonts-bold text-2xl text-[#ffffff] rounded-lg cursor-pointer hover:bg-[#48cae4]" value={"-"} onClick={e=> setValue(value + e.target.value)} />
       <input type="button" className="bg-[#0077b6] p-2 fonts-bold text-2xl text-[#ffffff] rounded-lg cursor-pointer hover:bg-[#48cae4]" value={"/"} onClick={e=> setValue(value + e.target.value)} />
       <input type="button" className="bg-[#0077b6] p-2 fonts-bold text-2xl text-[#ffffff] rounded-lg cursor-pointer hover:bg-[#48cae4]" value={"*"} onClick={e=> setValue(value + e.target.value)} />
-      <input type="button" className="bg-[#0077b6] p-2 fonts-bold text-2xl text-[#ffffff] rounded-lg cursor-pointer hover:bg-[#48cae4]" value={"="} onClick={e=> setValue(eval(value))} />
-      <input type="button" className="bg-[#0077b6] p-2 fonts-bold text-2xl text-[#ffffff] rounded-lg cursor-pointer hover:bg-[#48cae4]" value={"Del"} onClick={e => setValue(value.slice(0,-1))}/>
-      <input type="button" className="bg-[#0077b6] p-2 fonts-bold text-2xl text-[#ffffff] rounded-lg cursor-pointer hover:bg-[#48cae4]" value={"Ac"} onClick={e => setValue("")} />
+      <input type="button" className="bg-[#0077b6] p-2 fonts-bold text-2xl text-[#ffffff] rounded-lg cursor-pointer hover:bg-[#48cae4]" value={"="} onClick={()=> setValue(eval(value))} />
+      <input type="button" className="bg-[#0077b6] p-2 fonts-bold text-2xl text-[#ffffff] rounded-lg cursor-pointer hover:bg-[#48cae4]" value={"Del"} onClick={() => setValue(value.slice(0,-1))}/>
+      <input type="button" className="bg-[#0077b6] p-2 fonts-bold text-2xl text-[#ffffff] rounded-lg cursor-pointer hover:bg-[#48cae4]" value={"Ac"} onClick={() => setValue("")} />
       </div>
       </div>
       <div className="flex justify-center">
