@@ -36,7 +36,7 @@ const [value, setValue] = useState("")
       </div>
       </div>
       <div className="flex justify-center">
-        <div className="fonts-bold text-[#d0f4de] border-2 border-[#3a0ca3] p-2 rounded-lg my-[2rem] border-dotted animate-bounce"> we offer you the best</div>
+        <div className="fonts-bold text-[#d0f4de] border-2 border-[#3a0ca3] p-2 rounded-lg my-[2rem] border-dotted animate-bounce"> we offers the best</div>
       </div>
     </div>
     </div>
